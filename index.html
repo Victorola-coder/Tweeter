@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Twitter Clone</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="header">
+        <h1>TWEETER</h1>
+        <p>write a new tweet below</p>
+      </div>
+      <nav class="navbar">
+        <button id="compose-btn">Compose a tweet✍...</button>
+      </nav>
+
+      <div id="compose-box" class="hidden">
+        <form id="compose-form">
+          <textarea
+            id="tweet-input"
+            class="input"
+            placeholder="What's happening?"
+          ></textarea>
+          <div id="char-counter">140</div>
+          <button type="submit" id="submit-btn">Tweet</button>
+        </form>
+      </div>
+
+      <div id="tweets-container"></div>
+
+      <button id="scroll-top-btn" class="hidden">&#9650;</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
